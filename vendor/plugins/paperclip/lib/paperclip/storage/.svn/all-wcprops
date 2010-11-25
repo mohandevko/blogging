@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/linombo/alphasvn/!svn/ver/17/vendor/plugins/paperclip/lib/paperclip/storage
+END
+filesystem.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/linombo/alphasvn/!svn/ver/17/vendor/plugins/paperclip/lib/paperclip/storage/filesystem.rb
+END
+s3.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/linombo/alphasvn/!svn/ver/17/vendor/plugins/paperclip/lib/paperclip/storage/s3.rb
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/linombo/alphasvn/!svn/ver/17/vendor/plugins/paperclip/features/step_definitions
+END
+html_steps.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/linombo/alphasvn/!svn/ver/17/vendor/plugins/paperclip/features/step_definitions/html_steps.rb
+END
+s3_steps.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/linombo/alphasvn/!svn/ver/17/vendor/plugins/paperclip/features/step_definitions/s3_steps.rb
+END
+rails_steps.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/linombo/alphasvn/!svn/ver/17/vendor/plugins/paperclip/features/step_definitions/rails_steps.rb
+END
+web_steps.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/linombo/alphasvn/!svn/ver/17/vendor/plugins/paperclip/features/step_definitions/web_steps.rb
+END

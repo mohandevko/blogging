@@ -1,0 +1,51 @@
+body
+{
+  background-color: aliceblue;
+}
+#logo
+{
+  padding-left:28em;
+}
+#profileimage
+{
+  float: left
+}
+
+
+#links
+{
+  padding-left:12em;
+  padding-bottom
+  float: left
+  font-weight:bold;
+  font-size:14px;
+  background-color:lightblue;
+}
+
+#links a
+{
+  color:dodgerblue;
+}
+
+#links a:hover
+{
+  background-color: dodgerblue;
+  color: white;
+}
+
+
+#head
+{
+color: blue;
+}
+
+#createimage
+{
+  height: 100px;
+  width: 200px;
+}
+#head
+{
+  color: red;
+}
+

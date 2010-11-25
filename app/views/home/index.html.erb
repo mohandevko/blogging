@@ -1,0 +1,25 @@
+<% unless logged_in? %>
+  <%= render :partial => "sessions/login" %>  
+<% else %>
+
+  <div id="links">
+    <%= link_to "Logout", logout_path %>|
+    <%= link_to "New Post", :controller => "blogpost", :action => "new" %> |
+    <%= link_to "View blog", :controller => "blogpost", :action => "index" %>|
+    <%= link_to "Comments", :controller => "comments", :action => "index" %>
+  </div>
+  
+  <div id="profileimage">
+    <%= link_to "view Profile", :controller => "users", :action => "view_profile", :id => current_user.id %><br />
+    <%= image_tag  current_user.avatar.url(:thumb) %><br />
+    <%= link_to "Edit Profile", :controller => "users", :action => "edit_profile", :id => current_user.id %><br />
+  </div>
+  
+  
+
+<% end %>
+
+
+
+
+

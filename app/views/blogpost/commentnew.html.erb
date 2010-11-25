@@ -1,0 +1,5 @@
+<% form_tag :controller => "blogpost", :action => "commentcreate" do %>
+  <%= render :partial => "form2" %><br /><br />
+  <%= submit_tag "save" %>
+  <%= link_to "cancel", :controller => "blogpost", :action => "commentindex" %>
+<% end %>

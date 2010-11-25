@@ -1,0 +1,41 @@
+<div id='head'>
+  <h1><blink>Blog post's list</blink></h1>
+</div>
+  <% if @bs.size > 0 %>
+   
+    <table border = "1" >
+     
+      <tr>
+
+        <td><b>Name</b></td>
+        
+        <td><b>Title</b></td>
+        <td><b>Content</b></td>
+        <td><b>Options</b></td>
+      </tr>
+    
+    <% for b in @bs %>
+   
+      <tr>
+        <td><%= h b.name %></td>
+        <td><%= h(b.title) %></td>
+        <td><%= h b.content %></td>
+        <td><%= link_to "Delete", :controller => "blogpost", :action => "destroy", :id => b.id %>
+        <%= link_to "Edit", :controller => "blogpost", :action => "edit", :id => b.id %>
+        <%= link_to "Show", :controller => "blogpost", :action => "commentshow", :id => b.id %></td>
+      </tr>
+      
+    <% end %>
+    </table>
+  <% else %>
+    <h3>No blogposts</h3>
+  <% end %>
+<div id=tablehead">
+  <%= link_to "New blogpost", :controller => "blogpost", :action => "new" %> ||
+  <%= link_to "Home", :controller => 'home',   :action => 'index' %></p>
+    <%= link_to "blogpostcomments", :controller => 'blogpost',   :action => 'mohanindex' %></p>
+</div>
+
+
+
+

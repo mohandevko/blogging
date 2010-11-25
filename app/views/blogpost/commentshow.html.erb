@@ -1,0 +1,17 @@
+<h1><br />Title: <%= @b.title %></h1>
+<b>Description:</b> <%= @b.content %><br /><br />
+<b>Author:</b> <%= @b.name %><br />
+
+<% form_tag :controller => "blogpost", :action => "commentcreate", :blogpost_id => @b.id do %>
+  <%= error_messages_for :comment %>
+  <br />Comment: <%= text_area :comment, :description, :rows => "2", :cols => "30" %>
+  <%= submit_tag "save" %>
+<% end %>
+  
+<%= render :partial => "commentlist" %>
+<%= link_to "blogposts", :controller => "blogpost", :action => "index" %>
+
+
+
+
+

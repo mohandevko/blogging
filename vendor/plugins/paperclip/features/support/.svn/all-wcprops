@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/linombo/alphasvn/!svn/ver/17/vendor/plugins/paperclip/features/support
+END
+paths.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/linombo/alphasvn/!svn/ver/17/vendor/plugins/paperclip/features/support/paths.rb
+END
+s3.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/linombo/alphasvn/!svn/ver/17/vendor/plugins/paperclip/features/support/s3.rb
+END
+env.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/linombo/alphasvn/!svn/ver/17/vendor/plugins/paperclip/features/support/env.rb
+END
+rails.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/linombo/alphasvn/!svn/ver/17/vendor/plugins/paperclip/features/support/rails.rb
+END

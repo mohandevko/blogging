@@ -1,0 +1,1629 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#upload (for 127.0.0.1 at 2010-11-25 12:56:37) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"Wzk0F1wyG2A7rZi7e325BzEE3oKEMdNKh58n8xWOLzM=", "id"=>"1", "user"=>{"avatar"=>#<File:/tmp/RackMultipart20101125-21266-79vfey-0>}}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+WARNING: Can't mass-assign these protected attributes: salt, avatar_file_name, avatar_file_size, created_at, crypted_password, remember_token_expires_at, updated_at, avatar, id, avatar_content_type, remember_token, avatar_updated_at
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed in 40ms (DB: 2) | 302 Found [http://localhost/users/1/upload]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-11-25 12:56:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 49ms (View: 28, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-25 12:56:37) [GET]
+
+ActionController::RoutingError (No route matches "/avatars/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-25 12:56:37) [GET]
+
+ActionController::RoutingError (No route matches "/avatars/medium/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-25 12:56:37) [GET]
+
+ActionController::RoutingError (No route matches "/avatars/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#upload (for 127.0.0.1 at 2010-11-25 12:57:54) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"Wzk0F1wyG2A7rZi7e325BzEE3oKEMdNKh58n8xWOLzM=", "id"=>"1", "user"=>{"avatar"=>#<File:/tmp/RackMultipart20101125-21266-otg1h1-0>}}
+  [4;36;1mUser Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+WARNING: Can't mass-assign these protected attributes: salt, created_at, crypted_password, remember_token_expires_at, updated_at, avatar, id, remember_token
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed in 59ms (DB: 4) | 302 Found [http://localhost/users/1/upload]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-11-25 12:57:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 65ms (View: 21, DB: 4) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-25 12:57:54) [GET]
+
+ActionController::RoutingError (No route matches "/avatars/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-25 12:57:54) [GET]
+
+ActionController::RoutingError (No route matches "/avatars/medium/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-25 12:57:55) [GET]
+
+ActionController::RoutingError (No route matches "/avatars/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#upload (for 127.0.0.1 at 2010-11-25 12:58:37) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"Wzk0F1wyG2A7rZi7e325BzEE3oKEMdNKh58n8xWOLzM=", "id"=>"1", "user"=>{"avatar"=>#<File:/tmp/RackMultipart20101125-21266-du717t-0>}}
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+WARNING: Can't mass-assign these protected attributes: salt, created_at, crypted_password, remember_token_expires_at, updated_at, id, remember_token
+[paperclip] identify -format %wx%h '/tmp/stream20101125-21266-ujba75-0.jpg[0]' 2>/dev/null
+[paperclip] An error was received while processing: #<Paperclip::CommandNotFoundError: Paperclip::CommandNotFoundError>
+[paperclip] identify -format %wx%h '/tmp/stream20101125-21266-ujba75-0.jpg[0]' 2>/dev/null
+[paperclip] An error was received while processing: #<Paperclip::CommandNotFoundError: Paperclip::CommandNotFoundError>
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (1.0ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-11-25 07:28:38', `avatar_file_size` = 15428, `avatar_file_name` = 'Abdul-Kalam3.2.jpg' WHERE `id` = 1[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/mohan/rails/blog/public/system/avatars/1/original/Abdul-Kalam3.2.jpg
+  [4;35;1mSQL (52.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed in 314ms (DB: 57) | 302 Found [http://localhost/users/1/upload]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-11-25 12:58:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 32ms (View: 11, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-25 12:58:38) [GET]
+
+ActionController::RoutingError (No route matches "/system/avatars/1/medium/Abdul-Kalam3.2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-25 12:58:38) [GET]
+
+ActionController::RoutingError (No route matches "/system/avatars/1/thumb/Abdul-Kalam3.2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#upload (for 127.0.0.1 at 2010-11-25 13:01:30) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"Wzk0F1wyG2A7rZi7e325BzEE3oKEMdNKh58n8xWOLzM=", "id"=>"1", "user"=>{"avatar"=>#<File:/tmp/RackMultipart20101125-21356-t5wxb7-0>}}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+WARNING: Can't mass-assign these protected attributes: salt, created_at, crypted_password, remember_token_expires_at, updated_at, id, remember_token
+[paperclip] /usr/bin/identify -format %wx%h '/tmp/stream20101125-21356-139sm02-0.jpg[0]' 2>/dev/null
+[paperclip] /usr/bin/convert '/tmp/stream20101125-21356-139sm02-0.jpg[0]' -resize "100x100>" '/tmp/stream20101125-21356-139sm02-020101125-21356-1icoeta-0' 2>/dev/null
+[paperclip] /usr/bin/identify -format %wx%h '/tmp/stream20101125-21356-139sm02-0.jpg[0]' 2>/dev/null
+[paperclip] /usr/bin/convert '/tmp/stream20101125-21356-139sm02-0.jpg[0]' -resize "300x300>" '/tmp/stream20101125-21356-139sm02-020101125-21356-ui8xfl-0' 2>/dev/null
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+[paperclip] Saving attachments.
+[paperclip] deleting /home/mohan/rails/blog/public/system/avatars/1/original/Abdul-Kalam3.2.jpg
+[paperclip] saving /home/mohan/rails/blog/public/system/avatars/1/thumb/Abdul-Kalam3.2.jpg
+[paperclip] saving /home/mohan/rails/blog/public/system/avatars/1/original/Abdul-Kalam3.2.jpg
+[paperclip] saving /home/mohan/rails/blog/public/system/avatars/1/medium/Abdul-Kalam3.2.jpg
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed in 305ms (DB: 3) | 302 Found [http://localhost/users/1/upload]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-11-25 13:01:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 55ms (View: 32, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 13:57:59) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered sessions/_login (5.1ms)
+Completed in 51ms (View: 43, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-11-25 13:58:09) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"I2qFQjG94PyNAa+WotE2OAMQSefilO+0YkscmYWKnxk=", "login"=>"mohandev", "password"=>"dms.sira"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'mohandev') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 70ms (DB: 3) | 302 Found [http://localhost/session]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 13:58:09) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 120ms (View: 114, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-11-25 13:58:11) [GET]
+  Parameters: {"id"=>"show"}
+  [4;36;1mUser Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 87ms (View: 42, DB: 4) | 200 OK [http://localhost/users/show]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 13:59:35) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 55ms (View: 43, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-11-25 13:59:36) [GET]
+  Parameters: {"id"=>"show"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 55ms (View: 16, DB: 2) | 200 OK [http://localhost/users/show]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:03:16) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 183ms (View: 173, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-11-25 14:03:17) [GET]
+  Parameters: {"id"=>"view_profile"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, edit_profile, list, new, upload, and view_profile):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:04:42) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 65ms (View: 53, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-11-25 14:04:44) [GET]
+  Parameters: {"id"=>"view_profile"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, edit_profile, list, new, upload, and view_profile):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:06:21) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 23ms (View: 19, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-11-25 14:06:23) [GET]
+  Parameters: {"id"=>"view_profile"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, edit_profile, list, new, upload, and view_profile):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:08:51) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 70ms (View: 59, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#view_profile (for 127.0.0.1 at 2010-11-25 14:08:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/view_profile
+Completed in 81ms (View: 37, DB: 4) | 200 OK [http://localhost/users/view_profile/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#view_profile (for 127.0.0.1 at 2010-11-25 14:09:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/view_profile
+Completed in 69ms (View: 24, DB: 3) | 200 OK [http://localhost/users/view_profile/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#view_profile (for 127.0.0.1 at 2010-11-25 14:10:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/view_profile
+Completed in 51ms (View: 9, DB: 3) | 200 OK [http://localhost/users/view_profile/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:10:46) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 34ms (View: 28, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#view_profile (for 127.0.0.1 at 2010-11-25 14:10:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/view_profile
+Completed in 40ms (View: 9, DB: 2) | 200 OK [http://localhost/users/view_profile/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:10:54) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 56ms (View: 44, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit_profile (for 127.0.0.1 at 2010-11-25 14:10:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit_profile
+Completed in 71ms (View: 28, DB: 4) | 200 OK [http://localhost/users/edit_profile/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit_profile (for 127.0.0.1 at 2010-11-25 14:11:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit_profile
+Completed in 31ms (View: 10, DB: 2) | 200 OK [http://localhost/users/edit_profile/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:11:11) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 52ms (View: 41, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#view_profile (for 127.0.0.1 at 2010-11-25 14:11:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/view_profile
+Completed in 72ms (View: 26, DB: 4) | 200 OK [http://localhost/users/view_profile/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:11:42) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 34ms (View: 25, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#view_profile (for 127.0.0.1 at 2010-11-25 14:11:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/view_profile
+Completed in 137ms (View: 14, DB: 2) | 200 OK [http://localhost/users/view_profile/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit_profile (for 127.0.0.1 at 2010-11-25 14:11:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit_profile
+Completed in 69ms (View: 25, DB: 4) | 200 OK [http://localhost/users/edit_profile/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#view_profile (for 127.0.0.1 at 2010-11-25 14:11:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/view_profile
+Completed in 45ms (View: 7, DB: 2) | 200 OK [http://localhost/users/view_profile/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit_profile (for 127.0.0.1 at 2010-11-25 14:11:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit_profile
+Completed in 67ms (View: 24, DB: 4) | 200 OK [http://localhost/users/edit_profile/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:12:47) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 44ms (View: 35, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#view_profile (for 127.0.0.1 at 2010-11-25 14:12:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/view_profile
+Completed in 28ms (View: 7, DB: 2) | 200 OK [http://localhost/users/view_profile/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit_profile (for 127.0.0.1 at 2010-11-25 14:12:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit_profile
+Completed in 50ms (View: 16, DB: 2) | 200 OK [http://localhost/users/edit_profile/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:13:24) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 25ms (View: 19, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit_profile (for 127.0.0.1 at 2010-11-25 14:13:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit_profile
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 85ms (View: 42, DB: 4) | 200 OK [http://localhost/users/edit_profile/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#view_profile (for 127.0.0.1 at 2010-11-25 14:13:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/view_profile
+Completed in 121ms (View: 7, DB: 2) | 200 OK [http://localhost/users/view_profile/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#upload (for 127.0.0.1 at 2010-11-25 14:14:01) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"I2qFQjG94PyNAa+WotE2OAMQSefilO+0YkscmYWKnxk=", "id"=>"1", "user"=>{"avatar"=>#<File:/tmp/RackMultipart20101125-21398-1cfcpad-0>}}
+  [4;36;1mUser Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+WARNING: Can't mass-assign these protected attributes: salt, created_at, crypted_password, remember_token_expires_at, updated_at, id, remember_token
+[paperclip] /usr/bin/identify -format %wx%h '/tmp/stream20101125-21398-14hucwp-0.jpg[0]' 2>/dev/null
+[paperclip] /usr/bin/convert '/tmp/stream20101125-21398-14hucwp-0.jpg[0]' -resize "300x300>" '/tmp/stream20101125-21398-14hucwp-020101125-21398-186k1k2-0' 2>/dev/null
+[paperclip] /usr/bin/identify -format %wx%h '/tmp/stream20101125-21398-14hucwp-0.jpg[0]' 2>/dev/null
+[paperclip] /usr/bin/convert '/tmp/stream20101125-21398-14hucwp-0.jpg[0]' -resize "100x100>" '/tmp/stream20101125-21398-14hucwp-020101125-21398-7jaxwk-0' 2>/dev/null
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+[paperclip] Saving attachments.
+[paperclip] deleting /home/mohan/rails/blog/public/system/avatars/1/original/Abdul-Kalam3.2.jpg
+[paperclip] deleting /home/mohan/rails/blog/public/system/avatars/1/medium/Abdul-Kalam3.2.jpg
+[paperclip] deleting /home/mohan/rails/blog/public/system/avatars/1/thumb/Abdul-Kalam3.2.jpg
+[paperclip] saving /home/mohan/rails/blog/public/system/avatars/1/medium/Abdul-Kalam3.2.jpg
+[paperclip] saving /home/mohan/rails/blog/public/system/avatars/1/thumb/Abdul-Kalam3.2.jpg
+[paperclip] saving /home/mohan/rails/blog/public/system/avatars/1/original/Abdul-Kalam3.2.jpg
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed in 507ms (DB: 4) | 302 Found [http://localhost/users/1/upload]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-11-25 14:14:02) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, edit_profile, list, new, upload, and view_profile):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit_profile (for 127.0.0.1 at 2010-11-25 14:16:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit_profile
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 76ms (View: 34, DB: 4) | 200 OK [http://localhost/users/edit_profile/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#upload (for 127.0.0.1 at 2010-11-25 14:16:30) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"I2qFQjG94PyNAa+WotE2OAMQSefilO+0YkscmYWKnxk=", "id"=>"1", "user"=>{"avatar"=>#<File:/tmp/RackMultipart20101125-21398-1vjxfsm-0>}}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+WARNING: Can't mass-assign these protected attributes: salt, created_at, crypted_password, remember_token_expires_at, updated_at, id, remember_token
+[paperclip] /usr/bin/identify -format %wx%h '/tmp/stream20101125-21398-1gnuyxn-0.jpg[0]' 2>/dev/null
+[paperclip] /usr/bin/convert '/tmp/stream20101125-21398-1gnuyxn-0.jpg[0]' -resize "300x300>" '/tmp/stream20101125-21398-1gnuyxn-020101125-21398-1pns3my-0' 2>/dev/null
+[paperclip] /usr/bin/identify -format %wx%h '/tmp/stream20101125-21398-1gnuyxn-0.jpg[0]' 2>/dev/null
+[paperclip] /usr/bin/convert '/tmp/stream20101125-21398-1gnuyxn-0.jpg[0]' -resize "100x100>" '/tmp/stream20101125-21398-1gnuyxn-020101125-21398-1hmbja-0' 2>/dev/null
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+[paperclip] Saving attachments.
+[paperclip] deleting /home/mohan/rails/blog/public/system/avatars/1/original/Abdul-Kalam3.2.jpg
+[paperclip] deleting /home/mohan/rails/blog/public/system/avatars/1/medium/Abdul-Kalam3.2.jpg
+[paperclip] deleting /home/mohan/rails/blog/public/system/avatars/1/thumb/Abdul-Kalam3.2.jpg
+[paperclip] saving /home/mohan/rails/blog/public/system/avatars/1/medium/Abdul-Kalam3.2.jpg
+[paperclip] saving /home/mohan/rails/blog/public/system/avatars/1/thumb/Abdul-Kalam3.2.jpg
+[paperclip] saving /home/mohan/rails/blog/public/system/avatars/1/original/Abdul-Kalam3.2.jpg
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/users/edit_profile
+Completed in 458ms (DB: 2) | 302 Found [http://localhost/users/1/upload]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-11-25 14:16:30) [GET]
+  Parameters: {"id"=>"edit_profile"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, edit_profile, list, new, upload, and view_profile):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit_profile (for 127.0.0.1 at 2010-11-25 14:17:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit_profile
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 69ms (View: 28, DB: 4) | 200 OK [http://localhost/users/edit_profile/1]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#upload (for 127.0.0.1 at 2010-11-25 14:17:03) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"I2qFQjG94PyNAa+WotE2OAMQSefilO+0YkscmYWKnxk=", "id"=>"1", "user"=>{"avatar"=>#<File:/tmp/RackMultipart20101125-21398-1bu18bp-0>}}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+WARNING: Can't mass-assign these protected attributes: salt, created_at, crypted_password, remember_token_expires_at, updated_at, id, remember_token
+[paperclip] /usr/bin/identify -format %wx%h '/tmp/stream20101125-21398-lg1n42-0.jpg[0]' 2>/dev/null
+[paperclip] /usr/bin/convert '/tmp/stream20101125-21398-lg1n42-0.jpg[0]' -resize "300x300>" '/tmp/stream20101125-21398-lg1n42-020101125-21398-tet8mp-0' 2>/dev/null
+[paperclip] /usr/bin/identify -format %wx%h '/tmp/stream20101125-21398-lg1n42-0.jpg[0]' 2>/dev/null
+[paperclip] /usr/bin/convert '/tmp/stream20101125-21398-lg1n42-0.jpg[0]' -resize "100x100>" '/tmp/stream20101125-21398-lg1n42-020101125-21398-mx9s02-0' 2>/dev/null
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+[paperclip] Saving attachments.
+[paperclip] deleting /home/mohan/rails/blog/public/system/avatars/1/original/Abdul-Kalam3.2.jpg
+[paperclip] deleting /home/mohan/rails/blog/public/system/avatars/1/medium/Abdul-Kalam3.2.jpg
+[paperclip] deleting /home/mohan/rails/blog/public/system/avatars/1/thumb/Abdul-Kalam3.2.jpg
+[paperclip] saving /home/mohan/rails/blog/public/system/avatars/1/medium/Abdul-Kalam3.2.jpg
+[paperclip] saving /home/mohan/rails/blog/public/system/avatars/1/thumb/Abdul-Kalam3.2.jpg
+[paperclip] saving /home/mohan/rails/blog/public/system/avatars/1/original/Abdul-Kalam3.2.jpg
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/users/edit_profile/1
+Completed in 323ms (DB: 2) | 302 Found [http://localhost/users/1/upload]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit_profile (for 127.0.0.1 at 2010-11-25 14:17:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit_profile
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 35ms (View: 14, DB: 2) | 200 OK [http://localhost/users/edit_profile/1]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#upload (for 127.0.0.1 at 2010-11-25 14:19:47) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"I2qFQjG94PyNAa+WotE2OAMQSefilO+0YkscmYWKnxk=", "id"=>"1", "user"=>{"avatar"=>#<File:/tmp/RackMultipart20101125-21398-shhc0c-0>}}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+WARNING: Can't mass-assign these protected attributes: salt, created_at, crypted_password, remember_token_expires_at, updated_at, id, remember_token
+[paperclip] /usr/bin/identify -format %wx%h '/tmp/stream20101125-21398-a6rhlb-0.jpeg[0]' 2>/dev/null
+[paperclip] /usr/bin/convert '/tmp/stream20101125-21398-a6rhlb-0.jpeg[0]' -resize "300x300>" '/tmp/stream20101125-21398-a6rhlb-020101125-21398-1ev26gj-0' 2>/dev/null
+[paperclip] /usr/bin/identify -format %wx%h '/tmp/stream20101125-21398-a6rhlb-0.jpeg[0]' 2>/dev/null
+[paperclip] /usr/bin/convert '/tmp/stream20101125-21398-a6rhlb-0.jpeg[0]' -resize "100x100>" '/tmp/stream20101125-21398-a6rhlb-020101125-21398-1l1fydu-0' 2>/dev/null
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (1.0ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-11-25 08:49:47', `avatar_file_size` = 4771, `avatar_file_name` = 'images.jpeg' WHERE `id` = 1[0m
+[paperclip] Saving attachments.
+[paperclip] deleting /home/mohan/rails/blog/public/system/avatars/1/original/Abdul-Kalam3.2.jpg
+[paperclip] deleting /home/mohan/rails/blog/public/system/avatars/1/medium/Abdul-Kalam3.2.jpg
+[paperclip] deleting /home/mohan/rails/blog/public/system/avatars/1/thumb/Abdul-Kalam3.2.jpg
+[paperclip] saving /home/mohan/rails/blog/public/system/avatars/1/medium/images.jpeg
+[paperclip] saving /home/mohan/rails/blog/public/system/avatars/1/thumb/images.jpeg
+[paperclip] saving /home/mohan/rails/blog/public/system/avatars/1/original/images.jpeg
+  [4;36;1mSQL (43.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/users/edit_profile/1
+Completed in 380ms (DB: 48) | 302 Found [http://localhost/users/1/upload]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit_profile (for 127.0.0.1 at 2010-11-25 14:19:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit_profile
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 35ms (View: 12, DB: 2) | 200 OK [http://localhost/users/edit_profile/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#view_profile (for 127.0.0.1 at 2010-11-25 14:19:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/view_profile
+Completed in 27ms (View: 7, DB: 2) | 200 OK [http://localhost/users/view_profile/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#view_profile (for 127.0.0.1 at 2010-11-25 14:21:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/view_profile
+Completed in 35ms (View: 7, DB: 2) | 200 OK [http://localhost/users/view_profile/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit_profile (for 127.0.0.1 at 2010-11-25 14:21:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit_profile
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 40ms (View: 20, DB: 2) | 200 OK [http://localhost/users/edit_profile/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit_profile (for 127.0.0.1 at 2010-11-25 14:21:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit_profile
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 74ms (View: 32, DB: 4) | 200 OK [http://localhost/users/edit_profile/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:21:31) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 54ms (View: 43, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#view_profile (for 127.0.0.1 at 2010-11-25 14:21:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/view_profile
+Completed in 33ms (View: 13, DB: 2) | 200 OK [http://localhost/users/view_profile/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:21:35) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 26ms (View: 21, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit_profile (for 127.0.0.1 at 2010-11-25 14:21:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit_profile
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 72ms (View: 28, DB: 4) | 200 OK [http://localhost/users/edit_profile/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:21:38) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 25ms (View: 20, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#view_profile (for 127.0.0.1 at 2010-11-25 14:21:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/view_profile
+Completed in 48ms (View: 7, DB: 2) | 200 OK [http://localhost/users/view_profile/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:21:42) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 56ms (View: 45, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit_profile (for 127.0.0.1 at 2010-11-25 14:21:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit_profile
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 33ms (View: 13, DB: 2) | 200 OK [http://localhost/users/edit_profile/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#view_profile (for 127.0.0.1 at 2010-11-25 14:21:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/view_profile
+Completed in 60ms (View: 16, DB: 4) | 200 OK [http://localhost/users/view_profile/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:21:46) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 46ms (View: 36, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:23:15) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `avatar' for nil:NilClass) on line #16 of app/views/home/index.html.erb:
+13:   </div>
+14: <% end %>
+15: 
+16: <%= image_tag @user.avatar.url(:thumb) %>
+
+    app/views/home/index.html.erb:16
+
+Rendered rescues/_trace (159.9ms)
+Rendered rescues/_request_and_response (2.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:24:05) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `avatar' for nil:NilClass) on line #16 of app/views/home/index.html.erb:
+13:   </div>
+14: <% end %>
+15: 
+16: <%= image_tag @user.avatar.url(:thumb) %>
+
+    app/views/home/index.html.erb:16
+
+Rendered rescues/_trace (61.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:24:13) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 138ms (View: 133, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:24:48) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 83ms (View: 71, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:25:10) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 37ms (View: 32, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:25:42) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 40ms (View: 34, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-25 14:25:42) [GET]
+
+ActionController::RoutingError (No route matches "/%3Cimg%20alt=" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:26:10) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 38ms (View: 32, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-25 14:26:10) [GET]
+
+ActionController::RoutingError (No route matches "/%3Cimg%20alt=" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:26:16) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 44ms (View: 39, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-25 14:26:16) [GET]
+
+ActionController::RoutingError (No route matches "/%3Cimg%20alt=" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:26:49) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 159ms (View: 153, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:27:00) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 47ms (View: 37, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:27:16) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 80ms (View: 68, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:27:50) [GET]
+Rendering template within layouts/application
+Rendering home/index
+ERROR: compiling _run_erb_app47views47home47index46html46erb RAISED compile error
+/home/mohan/rails/blog/app/views/home/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+...( image_tag width="130" height="130" current_user.avatar.url...
+                              ^
+/home/mohan/rails/blog/app/views/home/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+...130" height="130" current_user.avatar.url(:thumb) ).to_s); @...
+                              ^
+Function body:           def _run_erb_app47views47home47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  unless logged_in? ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( render :partial => "sessions/login" ).to_s); @output_buffer.concat "  \n"
+;  else ; @output_buffer.concat "\n  <div id=\"profileimage\">\n    "
+
+; @output_buffer.concat(( link_to "view Profile", :controller => "users", :action => "view_profile", :id => current_user.id ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( image_tag width="130" height="130" current_user.avatar.url(:thumb) ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( link_to "Edit Profile", :controller => "users", :action => "edit_profile", :id => current_user.id ).to_s); @output_buffer.concat "<br />\n  </div>  \n  <div id=\"links\">\n    "
+
+
+; @output_buffer.concat(( link_to "New Post", :controller => "blogpost", :action => "new" ).to_s); @output_buffer.concat "<br /> \n    "
+; @output_buffer.concat(( link_to "View blog", :controller => "blogpost", :action => "index" ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( link_to "Comments", :controller => "comments", :action => "index" ).to_s); @output_buffer.concat "<br />\n  </div>\n"
+
+;  end ; @output_buffer.concat "\n\n\n\n\n\n"
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/mohan/rails/blog/app/views/home/index.html.erb:23:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/home/mohan/.gem/ruby/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/mohan/.gem/ruby/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/mohan/.gem/ruby/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/mohan/.gem/ruby/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+/home/mohan/.gem/ruby/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/home/mohan/.gem/ruby/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/home/mohan/.gem/ruby/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/mohan/.gem/ruby/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/home/mohan/.gem/ruby/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/home/mohan/.gem/ruby/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/mohan/rails/blog/app/views/home/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+...( image_tag width="130" height="130" current_user.avatar.url...
+                              ^
+/home/mohan/rails/blog/app/views/home/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+...130" height="130" current_user.avatar.url(:thumb) ).to_s); @...
+                              ^) on line #6 of app/views/home/index.html.erb:
+3: <% else %>
+4:   <div id="profileimage">
+5:     <%= link_to "view Profile", :controller => "users", :action => "view_profile", :id => current_user.id %><br />
+6:     <%= image_tag width="130" height="130" current_user.avatar.url(:thumb) %>
+7:     <%= link_to "Edit Profile", :controller => "users", :action => "edit_profile", :id => current_user.id %><br />
+8:   </div>  
+9:   <div id="links">
+
+    app/views/home/index.html.erb:23:in `compile!'
+
+Rendered rescues/_trace (168.6ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:28:06) [GET]
+Rendering template within layouts/application
+Rendering home/index
+ERROR: compiling _run_erb_app47views47home47index46html46erb RAISED compile error
+/home/mohan/rails/blog/app/views/home/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+...( image_tag width="130" height="130", current_user.avatar.ur...
+                              ^
+Function body:           def _run_erb_app47views47home47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  unless logged_in? ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( render :partial => "sessions/login" ).to_s); @output_buffer.concat "  \n"
+;  else ; @output_buffer.concat "\n  <div id=\"profileimage\">\n    "
+
+; @output_buffer.concat(( link_to "view Profile", :controller => "users", :action => "view_profile", :id => current_user.id ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( image_tag width="130" height="130", current_user.avatar.url(:thumb) ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( link_to "Edit Profile", :controller => "users", :action => "edit_profile", :id => current_user.id ).to_s); @output_buffer.concat "<br />\n  </div>  \n  <div id=\"links\">\n    "
+
+
+; @output_buffer.concat(( link_to "New Post", :controller => "blogpost", :action => "new" ).to_s); @output_buffer.concat "<br /> \n    "
+; @output_buffer.concat(( link_to "View blog", :controller => "blogpost", :action => "index" ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( link_to "Comments", :controller => "comments", :action => "index" ).to_s); @output_buffer.concat "<br />\n  </div>\n"
+
+;  end ; @output_buffer.concat "\n\n\n\n\n\n"
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/mohan/rails/blog/app/views/home/index.html.erb:23:in `compile!'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/home/mohan/.gem/ruby/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/mohan/.gem/ruby/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/mohan/.gem/ruby/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/mohan/.gem/ruby/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130
+/home/mohan/.gem/ruby/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/home/mohan/.gem/ruby/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/home/mohan/.gem/ruby/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/mohan/.gem/ruby/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/home/mohan/.gem/ruby/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/home/mohan/.gem/ruby/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/var/lib/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/home/mohan/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+/var/lib/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/mohan/rails/blog/app/views/home/index.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+...( image_tag width="130" height="130", current_user.avatar.ur...
+                              ^) on line #6 of app/views/home/index.html.erb:
+3: <% else %>
+4:   <div id="profileimage">
+5:     <%= link_to "view Profile", :controller => "users", :action => "view_profile", :id => current_user.id %><br />
+6:     <%= image_tag width="130" height="130", current_user.avatar.url(:thumb) %>
+7:     <%= link_to "Edit Profile", :controller => "users", :action => "edit_profile", :id => current_user.id %><br />
+8:   </div>  
+9:   <div id="links">
+
+    app/views/home/index.html.erb:23:in `compile!'
+
+Rendered rescues/_trace (59.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:28:14) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 86ms (View: 74, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#view_profile (for 127.0.0.1 at 2010-11-25 14:28:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/view_profile
+Completed in 147ms (View: 9, DB: 2) | 200 OK [http://localhost/users/view_profile/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:28:20) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 42ms (View: 33, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit_profile (for 127.0.0.1 at 2010-11-25 14:28:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit_profile
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 51ms (View: 12, DB: 4) | 200 OK [http://localhost/users/edit_profile/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:28:24) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 38ms (View: 29, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:28:35) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 54ms (View: 44, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BlogpostController#index (for 127.0.0.1 at 2010-11-25 14:28:49) [GET]
+  [4;36;1mBlogpost Load (1.2ms)[0m   [0;1mSELECT * FROM `blogposts` [0m
+  [4;35;1mComment Load (1.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering blogpost/index
+  [4;36;1mBlogpost Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+Completed in 140ms (View: 52, DB: 5) | 200 OK [http://localhost/blogpost]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:33:47) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `log_out_path' for #<ActionView::Base:0xb6e363ac>) on line #14 of app/views/home/index.html.erb:
+11:     <%= link_to "View blog", :controller => "blogpost", :action => "index" %><br />
+12:     <%= link_to "Comments", :controller => "comments", :action => "index" %><br />
+13:   </div>
+14:    <%= link_to "Log Out", log_out_path %><br />
+15: <% end %>
+
+    app/views/home/index.html.erb:14
+
+Rendered rescues/_trace (61.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:34:04) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `logg_out_path' for #<ActionView::Base:0xb6f4a748>) on line #14 of app/views/home/index.html.erb:
+11:     <%= link_to "View blog", :controller => "blogpost", :action => "index" %><br />
+12:     <%= link_to "Comments", :controller => "comments", :action => "index" %><br />
+13:   </div>
+14:    <%= link_to "Log Out", logg_out_path %><br />
+15: <% end %>
+
+    app/views/home/index.html.erb:14
+
+Rendered rescues/_trace (65.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:34:45) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 63ms (View: 54, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-11-25 14:34:48) [GET]
+Redirected to http://localhost:3000/
+Completed in 33ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:34:49) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered sessions/_login (3.1ms)
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:35:26) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered sessions/_login (2.8ms)
+Completed in 37ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-11-25 14:35:36) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"f4LJHEADgShAHthe7ArTLWHilXMhvrU4rvZ+whu3d7c=", "login"=>"mohandev", "password"=>"dms.sira"}
+  [4;36;1mUser Columns (7.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'mohandev') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 67ms (DB: 10) | 302 Found [http://localhost/session]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:35:37) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 30ms (View: 24, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:36:24) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 126ms (View: 121, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:36:54) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 38ms (View: 33, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:37:09) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 83ms (View: 72, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:37:21) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 36ms (View: 31, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:37:37) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 167ms (View: 162, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:40:20) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 39ms (View: 29, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:41:17) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 64ms (View: 53, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:42:26) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 64ms (View: 53, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:43:20) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 186ms (View: 177, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:44:12) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 58ms (View: 48, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:44:37) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 73ms (View: 62, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:45:16) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 81ms (View: 70, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit_profile (for 127.0.0.1 at 2010-11-25 14:45:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit_profile
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 33ms (View: 13, DB: 2) | 200 OK [http://localhost/users/edit_profile/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:45:36) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 72ms (View: 61, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:45:38) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 65ms (View: 53, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:45:58) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 29ms (View: 24, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:46:09) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 126ms (View: 121, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:46:22) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 33ms (View: 27, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:46:48) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 67ms (View: 55, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:46:59) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 67ms (View: 56, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:47:12) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 136ms (View: 127, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:47:23) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 34ms (View: 28, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:48:37) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 70ms (View: 58, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-25 14:49:07) [GET]
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 66ms (View: 55, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20101117052854)
+Migrating to CreateBlogposts (20101118113411)
+Migrating to CreateComments (20101119043637)
+Migrating to Removecolumn (20101119125321)
+Migrating to Addcolumn (20101119154037)
+Migrating to Addcol (20101119191806)
+Migrating to Addcoll (20101119192226)
+Migrating to AddAvatarColumnsToUser (20101124173557)
+Migrating to AddRatingTables (20101125100010)
+  [4;35;1mSQL (982.8ms)[0m   [0mCREATE TABLE `ratings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `rater_id` int(11), `rated_id` int(11), `rated_type` varchar(255), `rating` decimal) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW KEYS FROM `ratings`[0m
+  [4;35;1mSQL (211.3ms)[0m   [0mCREATE INDEX `index_ratings_on_rater_id` ON `ratings` (`rater_id`)[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW KEYS FROM `ratings`[0m
+  [4;35;1mSQL (188.1ms)[0m   [0mCREATE INDEX `index_ratings_on_rated_type_and_rated_id` ON `ratings` (`rated_type`, `rated_id`)[0m
+  [4;36;1mBlogpost Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+  [4;35;1mSQL (240.1ms)[0m   [0mALTER TABLE `blogposts` ADD `rating_count` int(11)[0m
+  [4;36;1mSQL (268.6ms)[0m   [0;1mALTER TABLE `blogposts` ADD `rating_total` decimal[0m
+  [4;35;1mSQL (235.1ms)[0m   [0mALTER TABLE `blogposts` ADD `rating_avg` decimal(10,2)[0m
+  [4;36;1mSQL (43.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101125100010')[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mSHOW FIELDS FROM `blogposts`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mdescribe `blogposts`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `blogposts`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSHOW FIELDS FROM `ratings`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `ratings`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW KEYS FROM `ratings`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `users`[0m

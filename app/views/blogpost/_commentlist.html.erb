@@ -1,0 +1,19 @@
+<h1><head>Comment list</head></h1>
+<% if @comments.size > 0 %>
+	<table border="1">
+		<tr>
+		<th>Description </th>
+		<th>Options</th>
+		</tr>
+		<% for comment in @comments %>
+			<tr>
+				<td> <%= comment.description %></td>
+				<td><%= link_to "Delete", :controller => "comments", :action => "destroy", :id => comment.id %></td>
+				<td><%= link_to "Show", :controller => "blogpost", :action => "blogandcommentshow", :comment_id => comment.id, :blogpost_id => @b.id %></td>
+			</tr>
+		<% end %>
+	</table>
+<% else %>
+	No comment
+<% end %>
+

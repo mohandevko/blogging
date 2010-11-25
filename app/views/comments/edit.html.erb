@@ -1,0 +1,5 @@
+<% form_tag :controller => "comments", :action => "update", :id => @comment.id do %>
+  <%= render :partial => "form" %>
+  <%= submit_tag "save" %>
+  <%= link_to "cancel", :controller => "comments", :action => "index" %>
+<% end %>

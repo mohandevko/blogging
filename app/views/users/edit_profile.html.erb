@@ -1,0 +1,8 @@
+<%= image_tag @user.avatar.url(:thumb) %>
+<% form_for :user, :url => upload_user_path(@user), :html => { :multipart => true } do |form| %>
+  Upload Image: <%= form.file_field :avatar %>
+  <%= submit_tag "Save" %>
+<% end %>
+<%= link_to "view Profile", :controller => "users", :action => "view_profile", :id => current_user.id %><br />
+<%= link_to "Home", :controller => 'home',   :action => 'index' %>
+

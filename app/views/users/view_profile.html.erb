@@ -1,0 +1,11 @@
+<h1><b> User Profile </b></h1>
+<b>Name: </b> <%= current_user.login %></ br>
+
+<%= image_tag @user.avatar.url(:thumb) %>
+<%= link_to "Home", :controller => 'home',   :action => 'index' %>
+
+
+
+
+
+
